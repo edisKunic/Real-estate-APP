@@ -1,0 +1,118 @@
+﻿/***
+User Profile Sidebar by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+***/
+
+body {
+    background: #F1F3FA;
+}
+
+/* Profile container */
+.profile {
+    margin: 20px 0;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+    padding: 20px 0 10px 0;
+    background: #fff;
+}
+
+.profile-userpic img {
+    float: none;
+    margin: 0 auto;
+}
+.profile-userpic .user-image {
+    width: 210px;
+    height: 210px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile-usertitle {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-usertitle-name {
+    color: #5a7391;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+    text-transform: uppercase;
+    color: #5b9bd1;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+
+/* Profile Content */
+.profile-content {
+    padding: 20px;
+    background: #fff;
+    min-height: 460px;
+}
+
+.side-menu .nav {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+
+    .side-menu .nav > li {
+        font-size: 14px;
+        margin-bottom: 0;
+        border-bottom: none;
+        margin-right: 15px;
+        margin-bottom: 15px
+       
+    }
+
+
+ .side-menu .nav > li:last-child {
+    margin-right: 0
+}
+
+.view-account .side-bar .side-menu .nav > li > a {
+    display: inline-block;
+    color: #9499a3;
+    padding: 5px;
+    border-bottom: 2px solid transparent
+}
+
+.side-menu .nav > li > a:hover {
+        color: #616670;
+        background: none
+    }
+
+.side-menu .nav > li.active a {
+    color: #40babd;
+    border-bottom: 2px solid #40babd;
+    background: none;
+    border-right: none
+}
+ .side-menu .nav > li.active a {
+    color: #6dbd63;
+    border-bottom-color: #6dbd63
+}
+.side-menu .nav > li.active a {
+    color: #497cb1;
+    border-bottom-color: #497cb1
+}
+
+.side-menu .nav > li.active a {
+    color: #ec6952;
+    border-bottom-color: #ec6952
+}
+
+.side-menu .nav > li .icon {
+    
+    font-size: 24px;
+    margin-bottom: 5px
+}
