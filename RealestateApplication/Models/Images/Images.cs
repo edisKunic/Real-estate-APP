@@ -10,6 +10,6 @@ namespace RealestateApplication.Models.Images
     {
         public int Id { get; set; }
         public byte[] Image { get; set; }
-        public int IdOfCorrespondingAd { get; set; }
+        public int IdOfCorrespondingUser { get; set; }
     }
 }

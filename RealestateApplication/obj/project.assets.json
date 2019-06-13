@@ -12975,11 +12975,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\RealestateApplication\\RealestateApplication\\RealestateApplication.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Real-estate-APP\\RealestateApplication\\RealestateApplication.csproj",
       "projectName": "RealestateApplication",
-      "projectPath": "C:\\Users\\User\\source\\repos\\RealestateApplication\\RealestateApplication\\RealestateApplication.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Real-estate-APP\\RealestateApplication\\RealestateApplication.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\RealestateApplication\\RealestateApplication\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Real-estate-APP\\RealestateApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

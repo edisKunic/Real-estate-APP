@@ -19,5 +19,6 @@ namespace RealestateApplication.Models.PropertyType
         public string Description { get; set; } = "";
         public string Address { get; set; } = "";
         public DateTime CreateDate { get; set; }
+        // dodati jos artributa kako bi dobili univerzalni model za oglase
     }
 }
