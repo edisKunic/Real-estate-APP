@@ -41,7 +41,7 @@
                         <li><a asp-controller="Member" asp-action="Index"><span class="fa fa-home"></span> Start Page</a></li>
                         <li><a asp-controller="Member" asp-action="List"><span class="fa fa-list-alt"></span> My offers</a></li>
                         <li><a aria-hidden="true" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"><span class="fa fa-user"></span> Profile</a></li>
-
+                        <li><a asp-controller="Ad" asp-action="AdCreate"><span class="fa fa-list-alt"></span> Add new Ad</a></li>
                     </ul>
                 </nav>
             </div>
@@ -50,6 +50,8 @@
             <div class="profile-content">
                 @RenderBody()
             </div>
+
+            @RenderSection("scripts", false);
         </div>
     </div>
 </div>

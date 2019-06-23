@@ -1,0 +1,74 @@
+﻿@model Ad
+@{
+}
+
+<div>
+    <h4>Create new Ad</h4>
+</div>
+<script src="~/lib/Trumbowyg-master/dist/trumbowyg.min.js"></script>
+<div>
+    <form asp-controller="Ad" asp-action="AdCreate" method="post">
+        <div class="form-group">
+            <label>Title</label>
+            <input asp-for="Title" />
+        </div>
+        <div class="form-group">
+            <label>Typeof</label>
+            <select asp-for="TypeOfAd">
+                <option>Home</option>
+                <option>Apartment</option>
+                <option>Room</option>
+                <option>Land</option>
+                <option>Garage</option>
+                <option>Cottage</option>
+                <option>Garage</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Price</label>
+            <input asp-for="Price" />
+        </div>
+        <div class="form-group">
+            <label>Area</label>
+            <input asp-for="Area" />
+        </div>
+        <div class="form-group">
+            <label>Furnished</label>
+            <input asp-for="Furnished" />
+        </div>
+        <div class="form-group">
+            <label>YearOfConstruction</label>
+            <input asp-for="YearOfConstruction" value="2010" />
+        </div>
+        <div class="form-group">
+            <label>Heating</label>
+            <select asp-for="Heating">
+                <option>Furnace (forced air distribution system)</option>
+                <option>Boiler (Radiator distribution system)</option>
+                <option>Heat Pump</option>
+                <option>Hybrid Heating</option>
+                <option>Ductless Mini-Splits</option>
+                <option>Radiant Heating</option>
+                <option>Baseboard Heaters</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Address</label>
+            <input asp-for="Address" />
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <textarea asp-for="Description" id="editor"></textarea>
+        </div>
+        <input type="submit" value="Submit" />
+    </form>
+</div>
+
+@section scripts{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="~/lib/Trumbowyg-master/dist/trumbowyg.min.js"></script>
+    <script>
+        $('#editor').trumbowyg();
+    </script>
+}

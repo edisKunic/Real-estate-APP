@@ -119,7 +119,6 @@ C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\n
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Index.g.cshtml.cs
-C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\HomeAds\CreateHomeAd.g.cshtml.cs
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\Member\Index.g.cshtml.cs
@@ -138,3 +137,5 @@ C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\n
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\RealestateApplication.dll
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\RealestateApplication.pdb
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\RealestateApplication.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\Ad\AdCreate.g.cshtml.cs
+C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\Member\AdCreateMessage.g.cshtml.cs
