@@ -1,13 +1,12 @@
 ﻿@model Ad
 @{
 }
-
+<link href="~/lib/Trumbowyg-master/dist/ui/trumbowyg.min.css" rel="stylesheet" />
 <div>
     <h4>Create new Ad</h4>
 </div>
-<script src="~/lib/Trumbowyg-master/dist/trumbowyg.min.js"></script>
-<div>
-    <form asp-controller="Ad" asp-action="AdCreate" method="post">
+<form class="well form-horizontal" asp-controller="Ad" asp-action="AdCreate" method="post">
+    <fieldset>
         <div class="form-group">
             <label>Title</label>
             <input asp-for="Title" />
@@ -58,17 +57,20 @@
         </div>
         <div class="form-group">
             <label>Description</label>
-            <textarea asp-for="Description" id="editor"></textarea>
+            <div style="background-color:#ffffff">
+                <textarea asp-for="Description" id="editor"></textarea>
+            </div>
         </div>
         <input type="submit" value="Submit" />
-    </form>
-</div>
+        </fieldset>
+</form>
 
-@section scripts{
+@section AAAA{
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <script src="~/lib/Trumbowyg-master/dist/trumbowyg.min.js"></script>
+
     <script>
         $('#editor').trumbowyg();
     </script>
+
 }

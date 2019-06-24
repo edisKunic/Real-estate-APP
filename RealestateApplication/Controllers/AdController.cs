@@ -54,7 +54,6 @@ namespace RealestateApplication.Controllers
             {
                 var userId = _userManager.GetUserId(HttpContext.User);
                 ApplicationUser user = _userManager.FindByIdAsync(userId).Result;
-
                 ad.UserId = user.Id;
                 _ctx.Ads.Add(ad);
                 await _ctx.SaveChangesAsync();

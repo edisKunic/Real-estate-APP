@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="~/css/site.css" />
     <link href="~/css/MemberPage.css" rel="stylesheet" />
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
@@ -65,6 +66,7 @@
     </footer>
 
     <environment include="Development">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
     </environment>
@@ -83,6 +85,9 @@
         </script>
     </environment>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
     @RenderSection("Scripts", required: false)
+
+    @RenderSection("AAAA", false)
 </body>
 </html>
