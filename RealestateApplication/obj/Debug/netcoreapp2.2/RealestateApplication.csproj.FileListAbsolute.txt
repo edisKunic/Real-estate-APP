@@ -122,7 +122,6 @@ C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\n
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\Member\Index.g.cshtml.cs
-C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\Member\List.g.cshtml.cs
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\Member\_Layout.g.cshtml.cs
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
@@ -139,3 +138,5 @@ C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\n
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\RealestateApplication.csproj.CopyComplete
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\Ad\AdCreate.g.cshtml.cs
 C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\Member\AdCreateMessage.g.cshtml.cs
+C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\Ad\GetAds.g.cshtml.cs
+C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\obj\Debug\netcoreapp2.2\Razor\Views\Ad\ViewAd.g.cshtml.cs

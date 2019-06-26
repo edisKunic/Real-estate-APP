@@ -1,0 +1,33 @@
+﻿
+<h1 class="my-4">
+    @Model.Title
+    <small>Property for @Model.OfferType</small>
+</h1>
+<p class="blog-post-meta">Created @Model.CreateDate <a href="#">@User.Identity.Name</a></p>
+
+<!-- Portfolio Item Row -->
+<div class="row">
+
+    <div class="col-md-8">
+        <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+    </div>
+
+    <div class="col-md-4"><h3 class="my-3">Offer Details</h3>
+                          <ul>
+                              <li>@Model.TypeOfAd</li>
+                              <li>@Model.Price</li>
+                              <li>@Model.Area</li>
+                              <li>@Model.Furnished</li>
+                              <li>@Model.YearOfConstruction</li>
+                              <li>@Model.Heating</li>
+                              <li>@Model.Address</li>
+                          </ul>
+    </div>
+
+</div>
+
+
+<div class="blog-post">
+<hr>
+    <p>@Model.Description</p>
+</div>

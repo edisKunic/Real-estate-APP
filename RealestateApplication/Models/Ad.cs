@@ -9,7 +9,8 @@ namespace RealestateApplication.Models
     {
         public int Id { get; set; }
         public string Title { get; set; } = "";
-        public string TypeOfAd { get; set; } // request or sell or rent
+        public string TypeOfAd { get; set; }
+        public string OfferType { get; set; }
         public decimal Price { get; set; }
         public decimal Area { get; set; }
         public bool Furnished { get; set; }

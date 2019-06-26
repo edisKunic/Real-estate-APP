@@ -1,2 +1,8 @@
-﻿This is Member Index page
-<a class="nav-link text-dark" asp-area="" asp-controller="Member" asp-action="Index">Member Panel</a>
+﻿<nav class="side-menu">
+    <ul class="nav">
+        
+        <li><a style="font-size:24px" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"><i class="fa fa-user" style="font-size:24px;color:#000000"></i> Profile</a></li>
+        <li><a style="font-size:24px" asp-controller="Ad" asp-action="AdCreate"><i class="fa fa-plus" style="font-size:24px;color:#000000"></i> Create Ad</a></li>
+        <li><a style="font-size:24px" asp-controller="Ad" asp-action="GetAds"><i class="fa fa-list-alt" style="font-size:24px;color:#000000"></i> My offers</a></li>
+    </ul>
+</nav>

@@ -15,16 +15,27 @@ namespace RealestateApplication.Controllers
 
         private readonly UserManager<ApplicationUser> _userManager;
         private ApplicationDbContext _ctx;
-        public List<string> ItemList = new List<string>
-        {
-            "Home",
-            "apartmetn"
-        };
+        
         public AdController(UserManager<ApplicationUser> userManager, ApplicationDbContext ctx)
         {
             _userManager = userManager;
             _ctx = ctx;
 
+        }
+        public IActionResult GetAds()
+        {
+            var userId = _userManager.GetUserId(HttpContext.User);
+            if (userId == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+            else
+            {
+                ApplicationUser user = _userManager.FindByIdAsync(userId).Result;
+                var List = _ctx.Ads.Where(p => p.UserId == user.Id);
+
+                return View(List);
+            }
         }
         // GET: Ad
         public ActionResult Index()
@@ -33,9 +44,10 @@ namespace RealestateApplication.Controllers
         }
 
         // GET: Ad/Details/5
-        public ActionResult Details(int id)
+        public IActionResult ViewAd(int id)
         {
-            return View();
+            var ad = _ctx.Ads.Find(id);
+            return View(ad);
         }
 
         // GET: Ad/Create
@@ -55,6 +67,7 @@ namespace RealestateApplication.Controllers
                 var userId = _userManager.GetUserId(HttpContext.User);
                 ApplicationUser user = _userManager.FindByIdAsync(userId).Result;
                 ad.UserId = user.Id;
+                ad.CreateDate = DateTime.Now;
                 _ctx.Ads.Add(ad);
                 await _ctx.SaveChangesAsync();
                 return View("~/Views/Member/AdCreateMessage.cshtml");
@@ -89,8 +102,9 @@ namespace RealestateApplication.Controllers
         }
 
         // GET: Ad/Delete/5
-        public ActionResult Delete(int id)
+        public ActionResult Delete(Ad ad)
         {
+            _ctx.Ads.Remove(ad);
             return View();
         }
 

@@ -15,35 +15,34 @@
         <div class="col-md-3">
             <div class="profile-sidebar">
                 <!-- SIDEBAR USERPIC -->
-                <div class="profile-userpic">
+                <div class="profile-content">
                     @if (Model.Image != null)
                     {
                         string imageBase64 = Convert.ToBase64String(Model.Image);
                         string imageSrc = string.Format("data:image/gif;base64,{0}", imageBase64);
-                        <img class="user-image" src="@imageSrc" />
+                        <img class="card-img-top"  src="@imageSrc" />
                     }
                     else
                     {
-                        <img class="user-image" src="~/content/static/Member_default_image.jpg" />
+                        <img class="card-img-top" src="~/content/static/Member_default_image.jpg" />
                     }
                 </div>
                 <div class="profile-usertitle">
                     <hr />
-                    <div class="profile-usertitle-name">
-                        @Model.FirstName @Model.LastName
-                    </div>
-                    <div class="profile-usertitle-job">
-                        @Model.City
+                    <div class="profile-usertitle">
+                        <p>
+                            Name: @Model.FirstName @Model.LastName
+                        </p>
+                        <hr />
+                        <p>Street: @Model.Street</p>
+                        <p>City: @Model.City</p>
+                        <p>Province: @Model.Province</p>
+                        <p>Country: @Model.Country</p>
+                        <p>Phone Number: @Model.PhoneNumber</p>
+                        <p>Postal Code: @Model.PostalCode</p>
                     </div>
                 </div>
-                <nav class="side-menu">
-                    <ul class="nav">
-                        <li><a asp-controller="Member" asp-action="Index"><span class="fa fa-home"></span> Start Page</a></li>
-                        <li><a asp-controller="Member" asp-action="List"><span class="fa fa-list-alt"></span> My offers</a></li>
-                        <li><a aria-hidden="true" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"><span class="fa fa-user"></span> Profile</a></li>
-                        <li><a asp-controller="Ad" asp-action="AdCreate"><span class="fa fa-list-alt"></span> Add new Ad</a></li>
-                    </ul>
-                </nav>
+                
             </div>
         </div>
         <div class="col-md-9">
