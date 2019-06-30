@@ -15,9 +15,10 @@
     <div class="col-md-4"><h3 class="my-3">Offer Details</h3>
                           <ul>
                               <li>@Model.TypeOfAd</li>
-                              <li>@Model.Price</li>
-                              <li>@Model.Area</li>
-                              <li>@Model.Furnished</li>
+                              <li>Price: @Model.Price</li>
+                              <li>Size: @Model.Area</li>
+                              @if (@Model.Furnished){ <li>Furnished: Yes</li> }
+                              else { <li>Furnished: No</li>}
                               <li>@Model.YearOfConstruction</li>
                               <li>@Model.Heating</li>
                               <li>@Model.Address</li>

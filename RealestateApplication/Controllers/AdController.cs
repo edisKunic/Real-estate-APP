@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RealestateApplication.Data;
 using RealestateApplication.Models;
+using RealestateApplication.Models.Images;
 
 namespace RealestateApplication.Controllers
 {
@@ -15,7 +17,7 @@ namespace RealestateApplication.Controllers
 
         private readonly UserManager<ApplicationUser> _userManager;
         private ApplicationDbContext _ctx;
-        
+
         public AdController(UserManager<ApplicationUser> userManager, ApplicationDbContext ctx)
         {
             _userManager = userManager;
@@ -60,17 +62,37 @@ namespace RealestateApplication.Controllers
         // POST: Ad/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AdCreate(Ad ad)
+        public async Task<IActionResult> AdCreate(Ad ad, IEnumerable<IFormFile> images)
         {
             try
             {
+                List<byte[]> _images = new List<byte[]>();
+                foreach (var img in images)
+                {
+                    using (var stream = new MemoryStream())
+                    {
+                        await img.CopyToAsync(stream);
+                        _images.Add(stream.ToArray());
+                    }
+                }
+                
                 var userId = _userManager.GetUserId(HttpContext.User);
                 ApplicationUser user = _userManager.FindByIdAsync(userId).Result;
                 ad.UserId = user.Id;
                 ad.CreateDate = DateTime.Now;
                 _ctx.Ads.Add(ad);
                 await _ctx.SaveChangesAsync();
-                return View("~/Views/Member/AdCreateMessage.cshtml");
+                
+                foreach (var item in _images)
+                {
+                    Images im = new Images();
+                    im.Image = item;
+                    im.IdOfCorrespondingAd = ad.Id;
+                    _ctx.Images.Add(im);
+                    await _ctx.SaveChangesAsync();
+
+                }
+                return RedirectToAction("GetAds", "Ad");
             }
             catch
             {
@@ -79,33 +101,28 @@ namespace RealestateApplication.Controllers
         }
 
         // GET: Ad/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult EditF(int id)
         {
-            return View();
+            Ad ad = _ctx.Ads.Find(id);
+            return View("AdEdit", ad);
         }
-
-        // POST: Ad/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<ActionResult> Edit(Ad ad)
         {
-            try
-            {
-                // TODO: Add update logic here
+            var userId = _userManager.GetUserId(HttpContext.User);
+            ApplicationUser user = _userManager.FindByIdAsync(userId).Result;
+            ad.UserId = user.Id;
+            _ctx.Ads.Update(ad);
+                await _ctx.SaveChangesAsync();
+            return RedirectToAction("GetAds", "Ad");
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
         }
-
+        
         // GET: Ad/Delete/5
-        public ActionResult Delete(Ad ad)
+        public async Task<IActionResult> Delete(Ad ad)
         {
             _ctx.Ads.Remove(ad);
-            return View();
+            await _ctx.SaveChangesAsync();
+            return RedirectToAction("GetAds", "Ad");
         }
 
         // POST: Ad/Delete/5

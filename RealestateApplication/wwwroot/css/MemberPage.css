@@ -106,3 +106,27 @@ body {
     font-size: 24px;
     margin-bottom: 5px
 }
+
+
+
+.article_buttons {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.article_buttons a {
+    width:100px;
+}
+
+
+.formAd {
+    margin-top:5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+    .formAd .form-group label {
+        display: inline-block;
+        clear: left;
+        width: 150px;
+        text-align: left;
+    }

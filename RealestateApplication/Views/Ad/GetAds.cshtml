@@ -18,16 +18,18 @@ counter++;
 
 <div class="col-lg-6 mb-4">
     <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+        <a asp-controller="Ad" asp-action="ViewAd" asp-route-id="@ad.Id"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
         <div class="card-body">
             <h4 class="card-title">
-                <a href="#">@ad.Title</a>
+                <a asp-controller="Ad" asp-action="ViewAd" asp-route-id="@ad.Id">@ad.Title</a>
             </h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
         </div>
-        <a asp-controller="Ad" asp-action="ViewAd" asp-route-id="@ad.Id" class="btn btn-primary">Open</a>
-        <a asp-controller="Ad" asp-action="Edit" asp-route-id="@ad.Id" class="btn btn-secondary">Edit</a>
-        <a asp-controller="Ad" asp-action="Delete" asp-route-id="@ad.Id" class="btn btn-danger">Delete</a>
+        <div class="article_buttons" >
+            <a asp-controller="Ad" asp-action="ViewAd" asp-route-id="@ad.Id" class="btn btn-primary"  >Open</a>
+            <a asp-controller="Ad" asp-action="EditF" asp-route-id="@ad.Id" class="btn btn-secondary" >Edit</a>
+            <a asp-controller="Ad" asp-action="Delete" asp-route-id="@ad.Id" class="btn btn-danger" >Delete</a>
+         </div>
     </div>
 </div>
                         

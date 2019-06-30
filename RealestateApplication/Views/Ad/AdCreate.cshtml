@@ -5,72 +5,76 @@
 <div>
     <h4>Create new Ad</h4>
 </div>
-<form class="well form-horizontal" asp-controller="Ad" asp-action="AdCreate" method="post">
-    <fieldset>
-        <div class="form-group">
-            <label>Title</label>
-            <input asp-for="Title" />
+<form class="formAd" asp-controller="Ad" asp-action="AdCreate" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label>Title</label>
+        <input asp-for="Title" />
+    </div>
+    <div class="form-group">
+        <label>Offer type: </label>
+        <select asp-for="OfferType">
+            <option>Sell</option>
+            <option>Rent</option>
+            <option>Seek</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Type of property:</label>
+        <select asp-for="TypeOfAd">
+            <option>Home</option>
+            <option>Apartment</option>
+            <option>Room</option>
+            <option>Land</option>
+            <option>Garage</option>
+            <option>Cottage</option>
+            <option>Garage</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Price:</label>
+        <input asp-for="Price" />
+    </div>
+    <div class="form-group">
+        <label>Area:</label>
+        <input asp-for="Area" />
+    </div>
+    <div class="form-group">
+        <label>Furnished:</label>
+        <input asp-for="Furnished" />
+    </div>
+    <div class="form-group">
+        <label>Year Of Construction:</label>
+        <input asp-for="YearOfConstruction" value="2010" />
+    </div>
+    <div class="form-group">
+        <label>Heating</label>
+        <select asp-for="Heating">
+            <option>Furnace (forced air distribution system)</option>
+            <option>Boiler (Radiator distribution system)</option>
+            <option>Heat Pump</option>
+            <option>Hybrid Heating</option>
+            <option>Ductless Mini-Splits</option>
+            <option>Radiant Heating</option>
+            <option>Baseboard Heaters</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Address</label>
+        <input asp-for="Address" />
+    </div>
+
+    <label>Description</label>
+    <div class="form-group">
+
+        <div style="background-color:#ffffff">
+            <textarea asp-for="Description" id="editor"></textarea>
         </div>
-        <div class="form-group">
-            <label>Offer type: </label>
-            <select asp-for="OfferType">
-                <option>Sell</option>
-                <option>Rent</option>
-                <option>Seek</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label>Typeof</label>
-            <select asp-for="TypeOfAd">
-                <option>Home</option>
-                <option>Apartment</option>
-                <option>Room</option>
-                <option>Land</option>
-                <option>Garage</option>
-                <option>Cottage</option>
-                <option>Garage</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label>Price</label>
-            <input asp-for="Price" />
-        </div>
-        <div class="form-group">
-            <label>Area</label>
-            <input asp-for="Area" />
-        </div>
-        <div class="form-group">
-            <label>Furnished</label>
-            <input asp-for="Furnished" />
-        </div>
-        <div class="form-group">
-            <label>YearOfConstruction</label>
-            <input asp-for="YearOfConstruction" value="2010" />
-        </div>
-        <div class="form-group">
-            <label>Heating</label>
-            <select asp-for="Heating">
-                <option>Furnace (forced air distribution system)</option>
-                <option>Boiler (Radiator distribution system)</option>
-                <option>Heat Pump</option>
-                <option>Hybrid Heating</option>
-                <option>Ductless Mini-Splits</option>
-                <option>Radiant Heating</option>
-                <option>Baseboard Heaters</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label>Address</label>
-            <input asp-for="Address" />
-        </div>
-        <div class="form-group">
-            <label>Description</label>
-            <div style="background-color:#ffffff">
-                <textarea asp-for="Description" id="editor"></textarea>
-            </div>
-        </div>
-        <input type="submit" value="Submit" />
-    </fieldset>
+    </div>
+    <div class="add-images">
+        <label>Image</label>
+        <input type="file" multiple name="images">
+    </div>
+    <input type="submit" value="Submit" />
 </form>
 
 @section AAAA{
