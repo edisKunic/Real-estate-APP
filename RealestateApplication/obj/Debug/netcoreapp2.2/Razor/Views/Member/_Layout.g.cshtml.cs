@@ -23,8 +23,13 @@ using RealestateApplication.Models;
 
 #line default
 #line hidden
+#line 3 "C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\Views\_ViewImports.cshtml"
+using RealestateApplication.ModelView;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"560bc5ed646e8b01e6867e8603be6f63f9280920", @"/Views/Member/_Layout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"41a26f9794c4e681a97f06998a27986acb797a74", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7b73d85e34f359cf82b9030998b348134c420fd2", @"/Views/_ViewImports.cshtml")]
     public class Views_Member__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ApplicationUser>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("card-img-top"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -104,7 +109,7 @@ WriteAttributeValue("", 679, imageSrc, 679, 9, false);
             WriteLiteral("                        ");
             EndContext();
             BeginContext(790, 76, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "560bc5ed646e8b01e6867e8603be6f63f92809206159", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "560bc5ed646e8b01e6867e8603be6f63f92809206336", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

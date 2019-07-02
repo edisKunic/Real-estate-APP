@@ -23,8 +23,13 @@ using RealestateApplication.Models;
 
 #line default
 #line hidden
+#line 3 "C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\Views\_ViewImports.cshtml"
+using RealestateApplication.ModelView;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4313892e7e86bf81fea40a5465c8b7834bd785d7", @"/Views/Ad/GetAds.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"41a26f9794c4e681a97f06998a27986acb797a74", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7b73d85e34f359cf82b9030998b348134c420fd2", @"/Views/_ViewImports.cshtml")]
     public class Views_Ad_GetAds : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Ad>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Ad", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -95,7 +100,7 @@ counter++;
             WriteLiteral("<div class=\"col-lg-6 mb-4\">\r\n    <div class=\"card h-100\">\r\n        ");
             EndContext();
             BeginContext(422, 136, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4313892e7e86bf81fea40a5465c8b7834bd785d76662", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4313892e7e86bf81fea40a5465c8b7834bd785d76839", async() => {
                 BeginContext(487, 67, true);
                 WriteLiteral("<img class=\"card-img-top\" src=\"http://placehold.it/700x400\" alt=\"\">");
                 EndContext();
@@ -132,7 +137,7 @@ counter++;
             WriteLiteral("\r\n        <div class=\"card-body\">\r\n            <h4 class=\"card-title\">\r\n                ");
             EndContext();
             BeginContext(646, 78, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4313892e7e86bf81fea40a5465c8b7834bd785d79380", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4313892e7e86bf81fea40a5465c8b7834bd785d79557", async() => {
                 BeginContext(712, 8, false);
 #line 24 "C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\Views\Ad\GetAds.cshtml"
                                                                             Write(ad.Title);
@@ -173,7 +178,7 @@ counter++;
             WriteLiteral("\r\n            </h4>\r\n            <p class=\"card-text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>\r\n        </div>\r\n        <div class=\"article_buttons\" >\r\n            ");
             EndContext();
             BeginContext(974, 99, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4313892e7e86bf81fea40a5465c8b7834bd785d712394", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4313892e7e86bf81fea40a5465c8b7834bd785d712571", async() => {
                 BeginContext(1065, 4, true);
                 WriteLiteral("Open");
                 EndContext();
@@ -211,7 +216,7 @@ counter++;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(1087, 99, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4313892e7e86bf81fea40a5465c8b7834bd785d715051", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4313892e7e86bf81fea40a5465c8b7834bd785d715228", async() => {
                 BeginContext(1178, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -249,7 +254,7 @@ counter++;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(1200, 99, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4313892e7e86bf81fea40a5465c8b7834bd785d717707", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4313892e7e86bf81fea40a5465c8b7834bd785d717884", async() => {
                 BeginContext(1289, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

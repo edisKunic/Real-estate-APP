@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using RealestateApplication.Data;
 using RealestateApplication.Models;
 using RealestateApplication.Models.Images;
+using RealestateApplication.ModelView;
 
 namespace RealestateApplication.Controllers
 {
@@ -48,8 +49,12 @@ namespace RealestateApplication.Controllers
         // GET: Ad/Details/5
         public IActionResult ViewAd(int id)
         {
+            ModelViewImgAd collection = new ModelViewImgAd();
             var ad = _ctx.Ads.Find(id);
-            return View(ad);
+            var list = _ctx.Images.Where(p => p.IdOfCorrespondingAd == ad.Id);
+            collection.Adss = ad;
+            collection.Imgs = list.ToList();
+            return View(collection);
         }
 
         // GET: Ad/Create

@@ -23,8 +23,13 @@ using RealestateApplication.Models;
 
 #line default
 #line hidden
+#line 3 "C:\Users\User\Documents\GitHub\Real-estate-APP\RealestateApplication\Views\_ViewImports.cshtml"
+using RealestateApplication.ModelView;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8662f2e98dfa506caef99b0de8792a26a674ac8a", @"/Views/Member/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"41a26f9794c4e681a97f06998a27986acb797a74", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7b73d85e34f359cf82b9030998b348134c420fd2", @"/Views/_ViewImports.cshtml")]
     public class Views_Member_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("style", new global::Microsoft.AspNetCore.Html.HtmlString("font-size:24px"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -60,7 +65,7 @@ using RealestateApplication.Models;
             WriteLiteral("<nav class=\"side-menu\">\r\n    <ul class=\"nav\">\r\n        \r\n        <li>");
             EndContext();
             BeginContext(69, 169, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8662f2e98dfa506caef99b0de8792a26a674ac8a5543", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8662f2e98dfa506caef99b0de8792a26a674ac8a5720", async() => {
                 BeginContext(163, 71, true);
                 WriteLiteral("<i class=\"fa fa-user\" style=\"font-size:24px;color:#000000\"></i> Profile");
                 EndContext();
@@ -86,7 +91,7 @@ using RealestateApplication.Models;
             WriteLiteral("</li>\r\n        <li>");
             EndContext();
             BeginContext(257, 145, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8662f2e98dfa506caef99b0de8792a26a674ac8a7365", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8662f2e98dfa506caef99b0de8792a26a674ac8a7542", async() => {
                 BeginContext(325, 73, true);
                 WriteLiteral("<i class=\"fa fa-plus\" style=\"font-size:24px;color:#000000\"></i> Create Ad");
                 EndContext();
@@ -111,7 +116,7 @@ using RealestateApplication.Models;
             WriteLiteral("</li>\r\n        <li>");
             EndContext();
             BeginContext(421, 147, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8662f2e98dfa506caef99b0de8792a26a674ac8a9114", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8662f2e98dfa506caef99b0de8792a26a674ac8a9291", async() => {
                 BeginContext(487, 77, true);
                 WriteLiteral("<i class=\"fa fa-list-alt\" style=\"font-size:24px;color:#000000\"></i> My offers");
                 EndContext();

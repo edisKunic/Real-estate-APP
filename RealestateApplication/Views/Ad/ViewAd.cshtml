@@ -1,34 +1,72 @@
-﻿
+﻿@model ModelViewImgAd
 <h1 class="my-4">
-    @Model.Title
-    <small>Property for @Model.OfferType</small>
+    @Model.Adss.Title
+    <small>Property for @Model.Adss.OfferType</small>
 </h1>
-<p class="blog-post-meta">Created @Model.CreateDate <a href="#">@User.Identity.Name</a></p>
+<p class="blog-post-meta">Created @Model.Adss.CreateDate <a href="#">@User.Identity.Name</a></p>
 
 <!-- Portfolio Item Row -->
 <div class="row">
+    @if (Model.Imgs.Count > 0)
+    {
+        string imgbase = Convert.ToBase64String(Model.Imgs[0].Image);
+        string imagesrc = string.Format("data:image/gif;base64,{0}", imgbase);
+        <div class="col-md-8">
+            <img class="img-fluid" src="@imagesrc" alt="">
+        </div>
+    }
+    else
+    {   <div class="col-md-8">
+            <img class="img-fluid" src="http://placehold.it/750x500" />
+        </div>
+    }
 
-    <div class="col-md-8">
-        <img class="img-fluid" src="http://placehold.it/750x500" alt="">
-    </div>
-
-    <div class="col-md-4"><h3 class="my-3">Offer Details</h3>
-                          <ul>
-                              <li>@Model.TypeOfAd</li>
-                              <li>Price: @Model.Price</li>
-                              <li>Size: @Model.Area</li>
-                              @if (@Model.Furnished){ <li>Furnished: Yes</li> }
-                              else { <li>Furnished: No</li>}
-                              <li>@Model.YearOfConstruction</li>
-                              <li>@Model.Heating</li>
-                              <li>@Model.Address</li>
-                          </ul>
+    <div class="col-md-4">
+        <h3 class="my-3">Offer Details</h3>
+        <ul>
+            <li>@Model.Adss.TypeOfAd</li>
+            <li>Price: @Model.Adss.Price</li>
+            <li>Size: @Model.Adss.Area</li>
+            @if (@Model.Adss.Furnished)
+            {
+                <li>Furnished: Yes</li> }
+            else
+            {
+                <li>Furnished: No</li>}
+            <li>@Model.Adss.YearOfConstruction</li>
+            <li>@Model.Adss.Heating</li>
+            <li>@Model.Adss.Address</li>
+        </ul>
     </div>
 
 </div>
 
 
 <div class="blog-post">
-<hr>
-    <p>@Model.Description</p>
+    <hr>
+    <p>@Model.Adss.Description</p>
+</div>
+<div class="row_image">
+    @foreach (var item in Model.Imgs)
+    {
+        string imageBase64 = Convert.ToBase64String(item.Image);
+        string imageSrc = string.Format("data:image/gif;base64,{0}", imageBase64);
+        <div class="column_image">
+            <img src="@imageSrc" alt="Lights" onclick="myFunction(this);">
+        </div>
+
+    }
+</div>
+    
+
+    <!-- The expanding image container -->
+ <div class="container_images">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
+
+        <!-- Image text -->
+        <div id="imgtext"></div>
 </div>
